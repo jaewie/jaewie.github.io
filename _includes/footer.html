@@ -1,0 +1,24 @@
+<footer class="center">
+  <div class="measure">
+      <a href="https://github.com/jaewie">GitHub</a> • <a href="https://stackoverflow.com/users/1284735/petabyte">StackOverflow</a> • <a href="https://leetcode.com/petabyte">LeetCode</a> •  <a href="mailto:wiejaehy@gmail.com">Email</a>
+
+  </div>
+  </br>
+  <div class="measure">
+      Copyright © 2023 Jae Wie. All rights reserved.
+  </div>
+  <div class="measure">
+     <a href="https://github.com/johno/pixyll">Pixyll</a> theme created by <a href="https://johno.com/">John Otander</a>
+  </div>
+</footer>
+{% if site.enable_anchorjs %}<!-- AnchorJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.0.0/anchor.min.js"></script>
+<script>
+    anchors.options.visible = 'always';
+    anchors.add('article h2, article h3, article h4, article h5, article h6');
+</script>{% endif %}
+<script type="text/javascript">
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("{{ '/sw.js' | relative_url }}")
+    }
+</script>

@@ -1,0 +1,14 @@
+---
+layout: null
+---
+{
+  "short_name": "{{ site.title | replace: '"', '\"' }}",
+  "name": "{{ site.title | replace: '"', '\"' }}",
+  "description": "{{ site.description | replace: '"', '\"' }}",
+  "icons": [],
+  "start_url": "{{ '/' | relative_url }}",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "{{ '/' | relative_url }}",
+  "theme_color": "#ffffff"
+}
